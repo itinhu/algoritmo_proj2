@@ -1,45 +1,10 @@
+"""Dados de demonstração; alterações duram até encerrar o programa."""
 usuarios = {
-    '11111111111': {
-        'nome': 'Mateus',
-        'senha': '123456',
-        'telefone': '83981878334',
-        'tipo': 'adm'
-    },
-    '22222222222': {
-        'nome': 'Dra. Ana',
-        'senha': 'abc123',
-        'tipo': 'dentista',
-        'especialidade': 'Ortodontia',
-        'cro': 'CRO-PB 1234',
-    },
-    '44444444444': {
-        'nome': 'Dr. José',
-        'senha': 'abc123',
-        'tipo': 'dentista',
-        'especialidade': 'Ortodontia',
-        'cro': 'CRO-PB 1234',
-    },
-    '55555555555': {
-        'nome': 'Dra. Laura',
-        'senha': 'abc123',
-        'telefone': '83988887777',
-        'tipo': 'dentista',
-        'especialidade': 'Ortodontia',
-        'cro': 'CRO-PB 1234',
-        'tipo': 'dentista',
-        'ativo': False
-    },
-    '33333333333': {
-        'nome': 'Almeida',
-        'senha': '123456',
-        'telefone': '8382828282',
-        'tipo': 'paciente'
-    },
+    '11111111111': {'nome': 'Mateus', 'senha': '123456', 'telefone': '83981878334', 'tipo': 'adm'},
+    '22222222222': {'id': 1, 'nome': 'Dra. Ana', 'tipo': 'dentista', 'especialidade': 'Ortodontia', 'cro': 'CRO-PB 1234', 'ativo': True},
+    '44444444444': {'id': 2, 'nome': 'Dr. José', 'tipo': 'dentista', 'especialidade': 'Endodontia', 'cro': 'CRO-PB 2345', 'ativo': True},
+    '55555555555': {'id': 3, 'nome': 'Dra. Laura', 'tipo': 'dentista', 'especialidade': 'Facetas em resina composta', 'cro': 'CRO-PB 3456', 'ativo': False},
+    '33333333333': {'nome': 'Almeida', 'senha': '123456', 'telefone': '83982828282', 'tipo': 'paciente', 'observacoes': '', 'alergias': ''},
 }
-
-# for cpf, dados in usuarios.items():
-#     if dados['tipo'] == 'dentista' and dados['ativo'] == True:
-#         print(f'\n{cpf}')
-#         for campo, valor in dados.items():
-#             print(f'  {campo} : {valor}')
-
+consultorios = [{'id': 1, 'nome': 'Sala 1', 'dentistas': ['22222222222', '44444444444']}]
+consultas = []
