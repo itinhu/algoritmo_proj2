@@ -1,4 +1,3 @@
-"""Dados de demonstração; alterações duram até encerrar o programa."""
 usuarios = {
     '11111111111': {'nome': 'Mateus', 'senha': '123456', 'telefone': '83981878334', 'tipo': 'adm'},
     '22222222222': {'id': 1, 'nome': 'Dra. Ana', 'tipo': 'dentista', 'especialidade': 'Ortodontia', 'cro': 'CRO-PB 1234', 'ativo': True},

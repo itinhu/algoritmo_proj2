@@ -1,4 +1,3 @@
-"""Ponto de entrada do sistema clinDONTO."""
 import utils.funcoes_globais as fg
 
 

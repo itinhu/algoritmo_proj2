@@ -1,4 +1,3 @@
-"""Regras da clínica e interface de terminal."""
 from datetime import datetime, timedelta
 from tabulate import tabulate
 from data.usuarios import usuarios, consultorios, consultas
@@ -36,7 +35,6 @@ def menu_adm():
 
 
 def verificar_cpf(cpf):
-    # O projeto usa CPFs fictícios: valida o formato, sem dígitos verificadores.
     return len(cpf) == 11 and cpf.isascii() and cpf.isdigit()
 
 
@@ -161,7 +159,6 @@ def remover_pessoa(cpf):
         return
     if menu('Confirmar remoção?', {1: 'Sim', 0: 'Voltar'}) != 1:
         return
-    # Preserva os nomes nos agendamentos históricos.
     for sala in consultorios:
         if cpf in sala['dentistas']:
             sala['dentistas'].remove(cpf)
